@@ -3,64 +3,56 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Nosde Bot - O Assistente do seu Servidor</title>
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      font-family: Arial, sans-serif;
-      background: #2c2f33;
-      color: #ffffff;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      text-align: center;
-      flex-direction: column;
-    }
-
-    h1 {
-      color: #7289da;
-    }
-
-    .button {
-      background-color: #7289da;
-      color: white;
-      padding: 12px 24px;
-      border: none;
-      border-radius: 6px;
-      text-decoration: none;
-      font-size: 18px;
-      margin-top: 20px;
-      transition: 0.3s ease;
-    }
-
-    .button:hover {
-      background-color: #5b6eae;
-    }
-
-    footer {
-      margin-top: 40px;
-      font-size: 12px;
-    }
-
-    footer a {
-      color: #99aab5;
-      text-decoration: none;
-      margin: 0 8px;
-    }
-  </style>
+  <title>Nosde Bot</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
-  <h1>🤖 Nosde Bot</h1>
-  <p>Organize e automatize o seu servidor com comandos interativos, categorias personalizadas e muito mais!</p>
+  <header>
+    <h1 data-aos="fade-down">🤖 Nosde Bot</h1>
+    <p data-aos="fade-up">Um bot em desenvolvimento contínuo, criado para estudos e aprendizado. Contamos com seu apoio e feedback para evoluir!</p>
+  </header>
 
-  <!-- Substitua com o link de convite real do seu bot -->
-  <a href="https://discord.com/oauth2/authorize?client_id=1373418360649547846" class="button" target="_blank">➕ Convidar o Bot</a>
+  <section class="cta" data-aos="zoom-in">
+    <a href="https://discord.com/oauth2/authorize?client_id=1373418360649547846&scope=bot&permissions=8" class="btn">➕ Adicionar ao Discord</a>
+    <a href="https://discord.gg/XmZ8QJ8G" class="btn">💬 Servidor de Suporte</a>
+  </section>
+
+  <section class="contact" data-aos="fade-up">
+    <h2>📬 Contatos</h2>
+    <ul>
+      <li><strong>Discord:</strong> <a href="https://discordapp.com/users/nosdecm">nosdecm</a></li>
+      <li><strong>Instagram:</strong> <a href="https://www.instagram.com/edsonneto05/" target="_blank">@edsonneto05</a></li>
+      <li><strong>X (Twitter):</strong> <a href="https://x.com/edsonnsampaio" target="_blank">@edsonnsampaio</a></li>
+      <li><strong>GitHub:</strong> <a href="https://github.com/edson240/nosdebot" target="_blank">Repositório do Projeto</a></li>
+    </ul>
+  </section>
+
+  <section class="suggestions" data-aos="fade-up">
+    <h2>💡 Sugestões</h2>
+    <form id="suggestionForm">
+      <label for="name">Nome:</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="email">E-mail:</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="message">Sugestão:</label>
+      <textarea id="message" name="message" rows="4" required></textarea>
+
+      <button type="submit" class="btn">Enviar</button>
+    </form>
+    <p id="formResponse" class="response"></p>
+  </section>
 
   <footer>
-    <a href="https://edson240.github.io/nosdebot/privacy.html">Política de Privacidade</a> |
-    <a href="https://edson240.github.io/nosdebot/terms.html">Termos de Uso</a>
+    <p>&copy; 2025 Nosde Bot. Todos os direitos reservados.</p>
   </footer>
+
+  <script src="script.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>
