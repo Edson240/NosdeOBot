@@ -10,7 +10,28 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Poppins:wght@300;600&display=swap" rel="stylesheet">
 </head>
+<script>
+  const gradientes = [
+    "linear-gradient(135deg, #2b0a3d, #6e1e91)",
+    "linear-gradient(135deg, #3a0f4e, #8f26d3)",
+    "linear-gradient(135deg, #1f0035, #a42aff)",
+    "linear-gradient(135deg, #2d0c45, #5b1a85)"
+  ];
 
+  let indiceAtual = 0;
+
+  function trocarGradiente() {
+    document.body.style.background = gradientes[indiceAtual];
+    indiceAtual = (indiceAtual + 1) % gradientes.length;
+  }
+
+  const links = document.querySelectorAll("nav a, .botao");
+  links.forEach(link => {
+    link.addEventListener("click", () => {
+      trocarGradiente();
+    });
+  });
+</script>
 <body>
   <header>
     <div class="logo">NosdeBot</div>
