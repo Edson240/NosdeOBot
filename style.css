@@ -143,4 +143,15 @@ nav a:hover {
   100% { transform: scale(1); }
 }
 
-/* Mudar gradiente a cada página com JavaScript futuramente */
+/* Mudar gradiente automaticamente e em páginas com JavaScript */
+
+@keyframes mudarGradiente {
+  0%   { background: linear-gradient(135deg, #2b0a3d, #6e1e91); }
+  33%  { background: linear-gradient(135deg, #3a0f4e, #8f26d3); }
+  66%  { background: linear-gradient(135deg, #1f0035, #a42aff); }
+  100% { background: linear-gradient(135deg, #2d0c45, #5b1a85); }
+}
+
+body.animado {
+  animation: mudarGradiente 20s infinite ease-in-out alternate;
+}
