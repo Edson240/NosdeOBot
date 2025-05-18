@@ -1,58 +1,41 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Nosde Bot</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NosdeBot</title>
   <link rel="stylesheet" href="style.css" />
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Poppins:wght@300;600&display=swap" rel="stylesheet">
 </head>
+
 <body>
   <header>
-    <h1 data-aos="fade-down">🤖 Nosde Bot</h1>
-    <p data-aos="fade-up">Um bot em desenvolvimento contínuo, criado para estudos e aprendizado. Contamos com seu apoio e feedback para evoluir!</p>
+    <div class="logo">NosdeBot</div>
+    <nav>
+      <ul>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#contato">Contato</a></li>
+        <li><a href="#sugestoes">Sugestões</a></li>
+        <li><a href="termos.html">Termos</a></li>
+        <li><a href="privacidade.html">Privacidade</a></li>
+      </ul>
+    </nav>
+    <a href="https://discord.com/oauth2/authorize?client_id=1373418360649547846" class="botao-convidar">Convidar</a>
   </header>
 
-  <section class="cta" data-aos="zoom-in">
-    <a href="https://discord.com/oauth2/authorize?client_id=1373418360649547846&scope=bot&permissions=8" class="btn">➕ Adicionar ao Discord</a>
-    <a href="https://discord.gg/XmZ8QJ8G" class="btn">💬 Servidor de Suporte</a>
+  <section class="hero">
+    <div class="texto">
+      <h1>Bem-vindo ao <span>NosdeBot</span></h1>
+      <p>Um bot em constante construção, criado com foco em aprendizado, feedback e novas funcionalidades.</p>
+      <div class="botoes">
+        <a href="https://discord.com/oauth2/authorize?client_id=1373418360649547846" class="botao primario">Convidar Agora</a>
+        <a href="#sugestoes" class="botao secundario">Enviar Sugestão</a>
+      </div>
+    </div>
+    <div class="ilustracao">
+      <img src="img/bot-pic.png" alt="Imagem do Bot" />
+    </div>
   </section>
-
-  <section class="contact" data-aos="fade-up">
-    <h2>📬 Contatos</h2>
-    <ul>
-      <li><strong>Discord:</strong> <a href="https://discordapp.com/users/nosdecm">nosdecm</a></li>
-      <li><strong>Instagram:</strong> <a href="https://www.instagram.com/edsonneto05/" target="_blank">@edsonneto05</a></li>
-      <li><strong>X (Twitter):</strong> <a href="https://x.com/edsonnsampaio" target="_blank">@edsonnsampaio</a></li>
-      <li><strong>GitHub:</strong> <a href="https://github.com/edson240/nosdebot" target="_blank">Repositório do Projeto</a></li>
-    </ul>
-  </section>
-
-  <section class="suggestions" data-aos="fade-up">
-    <h2>💡 Sugestões</h2>
-    <form id="suggestionForm">
-      <label for="name">Nome:</label>
-      <input type="text" id="name" name="name" required />
-
-      <label for="email">E-mail:</label>
-      <input type="email" id="email" name="email" required />
-
-      <label for="message">Sugestão:</label>
-      <textarea id="message" name="message" rows="4" required></textarea>
-
-      <button type="submit" class="btn">Enviar</button>
-    </form>
-    <p id="formResponse" class="response"></p>
-  </section>
-
-  <footer>
-    <p>&copy; 2025 Nosde Bot. Todos os direitos reservados.</p>
-  </footer>
-
-  <script src="script.js"></script>
-  <script>
-    AOS.init();
-  </script>
-</body>
-</html>
