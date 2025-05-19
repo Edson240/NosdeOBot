@@ -37,7 +37,7 @@ Futuramente, o bot incluirá:
 
 Este bot está em **fase de construção** e conta com o apoio da comunidade para evoluir. Caso queira sugerir funcionalidades, relatar bugs ou apenas trocar ideias, sinta-se à vontade para entrar em contato.
 
-- 🎮 Discord: (https://discord.gg/enmbjQdFth)
+- 🎮 Discord: [@discord](https://discord.gg/enmbjQdFth)
 - 📸 Instagram: [@edsonneto05](https://www.instagram.com/edsonneto05/)
 - 🕏 Twitter (X): [@edsonnsampaio](https://x.com/edsonnsampaio)
 - 🌐 Site: [https://edson240.github.io/nosdebot](https://edson240.github.io/nosdebot)
